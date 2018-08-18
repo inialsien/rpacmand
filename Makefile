@@ -1,4 +1,5 @@
-CC=gcc
+CROSS=arm-cortexa9_neon-linux-gnueabi-
+CC=$(CROSS)gcc
 CFLAGS=
 LIB_DIR=./lib/
 LDFLAGS=$(xmlrpc-c-config client --ldflags)
